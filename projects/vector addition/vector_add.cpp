@@ -6,6 +6,9 @@ void vector_add(data_t a[SIZE], data_t b[SIZE], data_t c[SIZE]) {
     #pragma HLS INTERFACE ap_memory port=a
     #pragma HLS INTERFACE ap_memory port=b
     #pragma HLS INTERFACE ap_memory port=c
+    
+    /*This pragma implements a hardware handshaking protocol for your function. 
+    It creates control signals (start, done, idle, ready) that allow external logic to start your function and determine when it's finished.*/
     #pragma HLS INTERFACE ap_ctrl_hs port=return
 
     for (int i = 0; i < SIZE; i++) {
