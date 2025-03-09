@@ -1,5 +1,5 @@
 # New_To_HLS
-sample projects and easy start to hls(vitis).
+Sample projects and easy start to hls(vitis).
 
 For vitis hls tool flow:  https://www.youtube.com/watch?v=WdLKrxYbcbs
 
